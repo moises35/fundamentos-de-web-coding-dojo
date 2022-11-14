@@ -1,0 +1,57 @@
+<html>
+<body>
+	<div id='background'>
+        <div id='character' style='position:absolute; top:100px; left:450px; background-image: url("img/down1.png"); width:59px; height:86px;'></div>
+    </div>
+    <script type="text/javascript">
+	    var leftValue = 450, topValue = 100;
+		var paso = 0, intervalo = 25;
+		var characterPasos = [
+			["img/down1.png", "img/down2.png"], 
+			["img/left1.png", "img/left2.png"], 
+			["img/right1.png", "img/right2.png"], 
+			["img/top1.png", "img/top2.png"]
+		];
+		
+		// Actualiza la posicion
+    	function update(posicion){
+			document.getElementById("character").style.left = leftValue+"px";
+    		document.getElementById("character").style.top = topValue+"px";
+			if(posicion >= 0 && posicion <= 3) {
+				document.getElementById("character").style.backgroundImage = "url('"+characterPasos[posicion][paso]+"')";
+				paso = paso == 0? 1: 0;
+			}
+    	}
+
+    	document.onkeydown = function(e){
+    		console.log(e);
+			var fila = -1;
+
+    		if(e.keyCode == 37) { // LEFT
+    			leftValue -= intervalo;
+				fila = 1;
+    		}
+    		else if (e.keyCode == 39) { // RIGHT
+    			leftValue += intervalo;    
+				fila = 2;		
+    		}
+    		else if (e.keyCode == 40) { // DOWN
+				topValue += intervalo;
+				fila = 0;
+    		}
+			else if(e.keyCode == 38) {	// TOP
+				topValue -= intervalo;
+				fila = 3;
+			}
+
+    		// Evitamos que se salga de los limite del mapa
+			if(leftValue < 0) leftValue += intervalo;
+			if(leftValue > 500) leftValue -= intervalo;
+			if(topValue < 0) topValue += intervalo;
+			if(topValue > 500) topValue -= intervalo;
+
+    		update(fila);
+    	}
+    </script>
+</body>
+</html>
