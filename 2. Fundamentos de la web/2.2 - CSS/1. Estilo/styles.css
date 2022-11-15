@@ -1,0 +1,35 @@
+* {
+    font-family: cursive;
+}
+
+h1 {
+    background-color: black;
+    font-family: cursive;
+    font-size: 2.4rem;
+}
+
+h1 > span {
+    color: white;
+}
+
+h1 > span:last-child {
+    color: cyan;
+}
+
+h2 {
+    background-color: blueviolet;
+    color: white;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    padding: 0.3rem;
+}
+
+h3 {
+    background-color: rgb(137, 231, 231);
+    color: blue;
+    text-decoration: underline;
+    font-weight: normal;
+    text-align: right;
+    padding: 0.3rem;
+}
