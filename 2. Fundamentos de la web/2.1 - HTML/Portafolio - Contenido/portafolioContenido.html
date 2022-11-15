@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Este es mi portafolio, contiene informacion sobre mi">
+        <title>Portafolio Personal - Contenido</title>
+        <!-- Estilos basicos para que se vea mejor -->
+        <style>
+            li {
+                display: inline-block;
+                margin-right: 12px;
+            }
+            img {
+                width: 8rem;
+            }
+            a > img {
+                width: 2rem;
+            }
+            div > img {
+                width: 4rem;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Oscar Moisés Alvarenga Mendoza</h1>
+        <img src="./img/avatar.png" alt="imagen de perfil - avatar">
+        <!-- Redes sociales -->
+        <div>
+            <ul>
+                <li>
+                    <a href="https://github.com/moises35" target="_blank">
+                        <img src="./img/github.png" alt="icono de github">
+                        my github
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/oscar-mois%C3%A9s-alvarenga-mendoza-4a614b13b/" target="_blank">
+                        <img src="./img/linkedin.png" alt="icono de linkedin">
+                        my linkedin
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="./img/email.png" alt="icono de email">
+                        my email
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Tabla de tecnologias -->
+        <h2>Technologies</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Front-End</th>
+                    <th>Python</th>
+                    <th>JavaScript</th>
+                    <th>Database</th>
+                    <th>Concepts</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML5</td>
+                    <td>Django</td>
+                    <td>Express</td>
+                    <td>My SQL</td>
+                    <td>AJAX</td>
+                </tr>
+                <tr>
+                    <td>CSS3</td>
+                    <td>Flask</td>
+                    <td>Mongoose</td>
+                    <td>MongoDB</td>
+                    <td>OOP</td>
+                </tr>
+                <tr>
+                    <td>Bootstrap</td>
+                    <td>Unittest</td>
+                    <td>React</td>
+                    <td></td>
+                    <td>REST</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Social Snakes -->
+        <h2>Social Snakes</h2>
+        <div>
+            <img src="./img/code-folder.png" alt="imagen de hoja con codigo">
+        </div>
+        <p>Social Media App made in Python - <a href="#">code</a> | <a href="#">deployed</a> </p>
+
+        <!-- Seccion de contactos -->
+        <h2>Contact Me</h2>
+        <form action="" method="post">
+            <div>
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="message">Message: </label>
+                <textarea name="message" id="message" cols="30" rows="6"></textarea>
+            </div>
+            <input type="submit" value="Send Message">
+        </form>
+    </body>
+</html>
