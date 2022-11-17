@@ -1,0 +1,256 @@
+@font-face {
+    font-family: JollyGod;
+    src: url("./tipografia/JollyGood\ Sans\ Basic.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'JollyGod', sans-serif;
+}
+
+/* Estilos para la parte del header */
+.encabezado {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(22, 22, 22);
+    color: #fff;
+    padding: 10px 8rem;
+    font-size: 1rem;
+}
+
+.logo {
+    margin-right: 3rem;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navegacion ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+}
+
+.navegacion ul li {
+    padding: 0 2rem;
+}
+
+.navegacion ul li a{
+    color: rgba(255, 255, 255, 0.801);
+    text-decoration: none;
+}
+
+.navegacion ul li a:hover{
+    color: #fff;
+}
+
+.btn-container {
+    flex: 2;
+    align-self: center;
+    text-align: end;
+}
+
+.navegacion ul li .active {
+    color: white;
+}
+
+.btn {
+    background-color: #17a4ba;
+    color: white;
+    font-size: 1rem;
+    padding: 0.3rem 0.7rem;
+}
+
+.btn:hover {
+    background-color: #0f7c8a;
+    cursor: pointer;
+}
+
+
+/* Estilos para la parte del contenido */
+
+/* Contenedor del main*/
+.main {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 81%;
+    margin: 2rem auto;
+}
+
+.col-2 {
+    flex: 1;
+}
+
+.col-1 {
+    flex: 1;
+}
+
+/* Contenedor de la presentacion */
+.presentation, .education {
+    width: 100%;
+    border: 3px solid gray;
+    border-radius: 5px;
+}
+
+.banner{
+    width: 100%;
+    height: 100px;
+    background-color: #17a2b8;
+}
+
+.avatar > img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    outline: 3px solid gray;
+}
+
+.avatar {
+    margin: 0 2rem;
+    position: relative;
+    top: -50px;
+}
+
+.contenido {
+    position: relative;
+    top: -35px;
+    margin: 0 2rem;
+}
+
+.icon {
+    width: 1rem;
+}
+
+.content-2 {
+    margin-bottom: 1rem;
+}
+
+.content-2 a {
+    color: blue;
+}
+
+/* Contenido de educacion */
+.education {
+    margin-top: 2rem;
+}
+
+.banner-2 {
+    display: flex;
+    color: white;
+    width: 100%;
+    background-color: #333333;
+}
+
+.banner-2 h2 {
+    font-size: 1.2rem;
+    margin: 1rem 0 1rem 2rem;
+    display: inline-block;
+}
+
+.content-education {
+    margin: 0 2rem;
+}
+
+.content-education * {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.date {
+    color: gray;
+}
+
+
+/* Contenido de la parte de amigos conectados */
+.connection-request, .connections {
+    width: 50%;
+    border: 3px solid gray;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.banner-3 {
+    display: flex;
+    color: white;
+    width: 100%;
+    height: 3rem;
+    background-color: #333333;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.banner-3 .circle, .banner-3 .circle-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #cccccc;
+    color: black;
+    margin-right: 1rem;
+}
+
+.banner-3 h2 {
+    font-size: 1.1rem;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.option img {
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.6rem;
+}
+
+.option img:hover {
+    cursor: pointer;
+}
+
+
+/* Estilos para la parte de your connections */
+.connections {
+    margin-top: 2rem;
+}
+
+.banner-3 .circle-2 {
+    width: 3rem;
+}
+
+.view-more {
+    padding: 0.8rem 1rem;
+    font-size: 1.1rem;
+    border-top: 2px solid gray;
+}
+
+.view-more a {
+    color: blue;
+}
