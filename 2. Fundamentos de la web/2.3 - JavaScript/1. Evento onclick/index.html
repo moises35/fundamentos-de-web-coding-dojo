@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Evento Onclick</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Cabecera -->
+       <header class="navbar">
+            <h1>Dojonary</h1>
+            <input type="search" name="search" id="search" placeholder="Search...">
+            <button class="btn-log" onclick="changeText(this)">Login</button>
+       </header> 
+       <!-- Contenido -->
+       <div class="row">
+            <div>
+                <div class="card">
+                    <div class="col-1">
+                        <h2>ninja</h2>
+                        <p><em>noun</em></p>
+                        <p>Plural: ninjas</p>
+                        <button class="btn-yellow" onclick="alert('Ninja was liked')">13 likes</button>
+                    </div>
+                    <div class="col-2">
+                        <p>A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="col-1">
+                        <h2>ninja</h2>
+                        <p><em>noun</em></p>
+                        <p>Plural: ninjas</p>
+                        <button class="btn-yellow" onclick="alert('Ninja was liked')">37 likes</button>
+                    </div>
+                    <div class="col-2">
+                        <p>A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Segunda columna -->
+            <div>
+                <div class="card-2">
+                    <h3>Dojonary is defined by <strong>YOU</strong></h3>
+                    <button class="btn-green" onclick="removeBtn(this)">Add Definition</button>
+                </div>
+            </div>
+       </div>
+       <!-- Importar script -->
+       <script src="./script.js"></script>
+    </body>
+</html>
