@@ -2,4 +2,6 @@
 
 ## Resultado
 
-![Resultado](./assets/result.gif)
+<video autoplay loop>
+    <source src="./assets/result.mp4">
+</video>
