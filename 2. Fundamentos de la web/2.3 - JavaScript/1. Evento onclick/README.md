@@ -1,7 +1,7 @@
 # Evento onclick - Ejercicio 1 de JS
 ## Maqueta
 
-![Maqueta](./screenshots/maqueta.png)
+![Maqueta](./screenshots/maqueta.png){width=50%}
 
 -----------------------------------
 
