@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dojo Weather</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <!-- CABECERA -->
+        <header class="header">
+            <nav class="flex-container">
+                <!-- Logo -->
+                <h1 class="title">Dojo Weather</h1>
+                <!-- Barra de navegación -->
+                <ul class="nav-links">
+                    <li>
+                        <a href="#" onclick="showMessage(this)">Burbang</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="showMessage(this)">Chicago</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="showMessage(this)">Dallas</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- CUERPO DE LA PÁGINA -->
+        <main class="flex-container col">
+            <!-- Cabecera principal del main -->
+            <div class="main-head">
+                <h2 class="title">San Jose</h2>
+                <form action="">
+                    <label for="selectorTemperature">show temperature in </label>
+                    <select name="selectorTemperature" id="selectorTemperature" onchange="cambiarSistema(this)">
+                        <option value="c">°C</option>
+                        <option value="f">°F</option>
+                    </select>
+                </form>
+            </div>
+
+            <!-- Contenedor de las tarjetas del clima -->
+            <div class="flex-container row">
+                <!-- Tarjetas de clima -->
+                <div class="card">
+                    <h3>Today</h3>
+                    <img src="./sources/img/some_rain.png" alt="clima img">
+                    <p>some rain</p>
+                    <div class="temp">
+                        <p class="hot"><span>24</span>°</p>
+                        <p class="cold"><span>18</span>°</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Tomarrow</h3>
+                    <img src="./sources/img/some_sun.png" alt="clima img">
+                    <p>some sun</p>
+                    <div class="temp">
+                        <p class="hot"><span>27</span>°</p>
+                        <p class="cold"><span>19</span>°</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Friday</h3>
+                    <img src="./sources/img/some_clouds.png" alt="clima img">
+                    <p>some cloud</p>
+                    <div class="temp">
+                        <p class="hot"><span>21</span>°</p>
+                        <p class="cold"><span>16</span>°</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Saturday</h3>
+                    <img src="./sources/img/some_sun.png" alt="clima img">
+                    <p>some sun</p>
+                    <div class="temp">
+                        <p class="hot"><span>26</span>°</p>
+                        <p class="cold"><span>21</span>°</p>
+                    </div>
+                </div>
+            </div>
+        </main> 
+
+        <!-- Pie de Página -->
+        <footer class="flex-container" id="cookies">
+            <img src="./sources/img/cookie.png" alt="Cookie img" class="cookie-img">
+            <div class="cookie-sms">
+                <h4>Stop! Cookie time</h4>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+            </div>
+            <button class="cookie-btn" onclick="closeCookie()">I Accept</button>
+        </footer>
+        <!-- Añadimos el Script -->
+        <script src="./script.js"></script>
+    </body>
+
+</html>

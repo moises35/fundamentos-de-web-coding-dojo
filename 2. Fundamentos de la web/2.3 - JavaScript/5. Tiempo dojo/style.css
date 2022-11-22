@@ -1,0 +1,183 @@
+/* Declaración de variables globales */
+:root {
+    --bg-primary: #9fc5f8;
+    --bg-secondary: #eeeeee;
+    --text-primary: #ffffff;
+    --text-secondary: #000000;
+    --temperature-min: #2b78e4;
+    --temperature-max: #cf2a27;
+}
+
+/* Importamos la fuente desde nuestra carpeta Sources */
+@font-face {
+    font-family: JollyGod;
+    src: url("./sources/tipografia/JollyGood\ Sans\ Basic.otf");
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'JollyGod', sans-serif;
+}
+
+/* Estilos para la parte de la cabecera */
+.header {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.flex-container, .nav-links, .header, .main-head, .temp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.nav-links {
+    font-size: 1.2rem;
+    width: 50%;
+    list-style: none;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#selectorTemperature {
+    padding: 4px;
+    margin-left: 4px;
+}
+
+/* Estilos para el MAIN-CABECERA */
+.main-head {
+    color: var(--text-secondary);
+    padding: 0 0 16px;
+    border-bottom: 3px solid black;
+    margin-bottom: 20px;
+}
+
+.main-head > .title {
+    font-size: 1.7rem;
+}
+
+.col {
+    flex-direction: column;
+    align-items: initial;
+}
+
+/* Estilos para el MAIN-CONTENEDOR DE CARDS */
+.row {
+    flex-direction: row;
+}
+
+.card {
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary);
+    width: 160px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 12px 12px 0;
+}
+
+.card * {
+    margin-bottom: 12px;
+}
+
+.card h3 {
+    font-size: 26px;
+}
+
+.card > p {
+    font-size: 18px;
+}
+
+.card img {
+    border-radius: 50%;
+    width: 150px;
+}
+
+.temp {
+    margin: 20px auto 16px;
+    width: 80%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hot {
+    color: var(--temperature-max);
+}
+
+.cold {
+    color: var(--temperature-min);
+}
+
+
+/* Estilos para el bloque de cookies */
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+footer.flex-container {
+    background-color: var(--bg-secondary);
+    border: 2px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+    position: fixed;
+    bottom: 2%;
+    margin-left: 50%;
+    left: -400px;
+    justify-content: space-around;
+}
+
+.cookie-img {
+    width: 60px;
+}
+footer.flex-container * {
+    margin: 5px 0;
+}
+
+.cookie-sms {
+    width: 60%;
+}
+
+/* Estilos del boton */
+.cookie-btn {
+    background-color: #2196F3;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
+}
+
+.cookie-btn:hover {
+    background-color: #0b7dda;
+    box-shadow: 3px 3px black;
+    cursor: pointer;
+}
+
+.cookie-btn:active {
+    background-color: #0b7dda;
+    box-shadow: 0 0 black;
+    transform: translateY(3px);
+}
+
